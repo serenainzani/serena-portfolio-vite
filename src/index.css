@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+    --color-fishing-aqua: #197978;
+}
