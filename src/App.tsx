@@ -23,14 +23,16 @@ function App() {
                     />
                 </a>
             </nav>
-            <hgroup className="font-bold font-roboto-slab text-fishing-peach">
-                <h1 className="text-6xl tracking-tighter text-shadow-[2px_2px_0_#197978] pl-11">
-                    Serena
-                </h1>
-                <h1 className="text-9xl tracking-tighter text-shadow-[2px_2px_0_#197978] -mt-11">
-                    Inzani
-                </h1>
-                <p>Software Engineer</p>
+            <hgroup className="font-roboto-slab">
+                <div className="font-semibold text-fishing-peach justify-self-center text-shadow-[2px_2px_0_#197978]">
+                    <h1 className="text-6xl tracking-tighter pl-11">Serena</h1>
+                    <h1 className="text-9xl tracking-tighter -mt-11">Inzani</h1>
+                </div>
+                <div className="bg-fishing-aqua w-10/12 justify-self-center">
+                    <p className="tracking-tighter text-2xl fonts-semibold font-roboto-slab justify-self-center text-shadow-[2px_1px_0_#000] text-fishing-yellow">
+                        Software Engineer
+                    </p>
+                </div>
             </hgroup>
 
             <div className="card">
