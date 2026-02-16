@@ -3,5 +3,11 @@
     --color-fishing-aqua: #197978;
     --color-fishing-peach: #E69068;
     --color-fishing-yellow: #F2E070;
+    --color-fishing-tan: #EEE4DA;
     --font-roboto-slab: "Roboto Slab", 'serif'; 
+    --font-roboto: "Roboto", 'sans-serif'; 
+}
+
+body {
+    background-color: var(--color-fishing-tan);
 }

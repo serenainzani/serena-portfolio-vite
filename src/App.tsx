@@ -1,6 +1,7 @@
 import { useState } from "react";
 import githubIcon from "/github-logo.svg";
 import logo from "/logo.png";
+import ProjectCard from "./components/Project";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -33,23 +34,18 @@ function App() {
                     <h1 className="text-9xl tracking-tighter -mt-11">Inzani</h1>
                 </div>
                 <div className="bg-fishing-aqua w-10/12 justify-self-center h-10 content-center">
-                    <p className="tracking-tighter text-2xl fonts-semibold font-roboto-slab justify-self-center text-shadow-[2px_1px_0_#000] text-fishing-yellow">
+                    <p className="tracking-tighter text-2xl font-semibold font-roboto-slab justify-self-center text-shadow-[2px_1px_0_#000] text-fishing-yellow">
                         Software Engineer
                     </p>
                 </div>
             </hgroup>
-
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p className="">
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            <main className="border-fishing-yellow border-3 m-3 bg-white/50">
+                <h2 className=" justify-self-center font-roboto-slab font-semibold text-2xl tracking-tighter text-fishing-aqua text-shadow-[1px_1px_0_#f2e070]">
+                    My Projects
+                </h2>
+                <ProjectCard project="rpgNotes" />
+                {/* <ProjectCard project="rpgNotes" /> */}
+            </main>
         </>
     );
 }
