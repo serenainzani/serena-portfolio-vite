@@ -19,7 +19,7 @@ const ProjectCard = ({ project }: { project: string }) => {
                     {liveLink && (
                         <>
                             <ProjectLink url={liveLink} text="Live App" />
-                            &nbsp;.........................&nbsp;
+                            &nbsp;...........&nbsp;
                         </>
                     )}
                     <ProjectLink url={githubLink} text="GitHub" />

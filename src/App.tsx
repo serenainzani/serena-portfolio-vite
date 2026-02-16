@@ -1,7 +1,6 @@
-import { useState } from "react";
 import githubIcon from "/github-logo.svg";
 import logo from "/logo.png";
-import ProjectCard from "./components/Project";
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
     return (
@@ -27,7 +26,7 @@ function App() {
                 </a>
             </nav>
             <hgroup className="font-roboto-slab pt-14">
-                <div className="font-semibold text-fishing-peach justify-self-center text-shadow-[2px_2px_0_#197978]">
+                <div className="font-semibold text-fishing-peach justify-self-center text-shadow-[3px_3px_0_#197978]">
                     <h1 className="text-6xl tracking-tighter pl-11">Serena</h1>
                     <h1 className="text-9xl tracking-tighter -mt-11">Inzani</h1>
                 </div>
@@ -38,7 +37,7 @@ function App() {
                 </div>
             </hgroup>
             <main className="border-fishing-yellow border-3 m-3 bg-white/50">
-                <h2 className=" justify-self-center font-roboto-slab font-semibold text-2xl tracking-tighter text-fishing-aqua text-shadow-[1px_1px_0_#f2e070]">
+                <h2 className=" justify-self-center font-roboto-slab font-semibold text-2xl tracking-tighter text-fishing-aqua text-shadow-[1px_1px_0_#f2e070] py-2">
                     My Projects
                 </h2>
                 <ProjectCard project="rpgNotes" />
