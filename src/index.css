@@ -1,5 +1,6 @@
 @import "tailwindcss";
-
 @theme {
     --color-fishing-aqua: #197978;
+    --color-fishing-peach: #E69068;
+    --font-roboto-slab: "Roboto Slab", 'serif'; 
 }

@@ -23,7 +23,16 @@ function App() {
                     />
                 </a>
             </nav>
-            <h1>Vite + React</h1>
+            <hgroup className="font-bold font-roboto-slab text-fishing-peach">
+                <h1 className="text-6xl tracking-tighter text-shadow-[2px_2px_0_#197978] pl-11">
+                    Serena
+                </h1>
+                <h1 className="text-9xl tracking-tighter text-shadow-[2px_2px_0_#197978] -mt-11">
+                    Inzani
+                </h1>
+                <p>Software Engineer</p>
+            </hgroup>
+
             <div className="card">
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
