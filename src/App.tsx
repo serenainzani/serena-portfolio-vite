@@ -1,5 +1,5 @@
 import { useState } from "react";
-import menuIcon from "/menu_icon.svg";
+import githubIcon from "/github-logo.svg";
 import logo from "/logo.png";
 
 function App() {
@@ -15,9 +15,13 @@ function App() {
                         alt="Serena logo"
                     />
                 </a>
-                <a href="#">
+                <a
+                    href="https://github.com/serenainzani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <img
-                        src={menuIcon}
+                        src={githubIcon}
                         className="logo w-12 m-3"
                         alt="menu icon"
                     />
@@ -28,7 +32,7 @@ function App() {
                     <h1 className="text-6xl tracking-tighter pl-11">Serena</h1>
                     <h1 className="text-9xl tracking-tighter -mt-11">Inzani</h1>
                 </div>
-                <div className="bg-fishing-aqua w-10/12 justify-self-center">
+                <div className="bg-fishing-aqua w-10/12 justify-self-center h-10 content-center">
                     <p className="tracking-tighter text-2xl fonts-semibold font-roboto-slab justify-self-center text-shadow-[2px_1px_0_#000] text-fishing-yellow">
                         Software Engineer
                     </p>
