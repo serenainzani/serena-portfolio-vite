@@ -7,7 +7,7 @@ const ProjectCard = ({ project }: { project: string }) => {
         <section className="flex w-fit">
             <img
                 src={`../../public/${img}`}
-                className="w-48 h-48 object-cover m-2
+                className="w-40 h-40 object-cover m-2
                 "
             />
             <div className="flex flex-col justify-between">
@@ -16,8 +16,12 @@ const ProjectCard = ({ project }: { project: string }) => {
                     &nbsp;{description}
                 </p>
                 <p className="text-sm font-roboto font-normal p-2">
-                    <ProjectLink url={liveLink} text="Live App" />
-                    &nbsp;.........................&nbsp;{" "}
+                    {liveLink && (
+                        <>
+                            <ProjectLink url={liveLink} text="Live App" />
+                            &nbsp;.........................&nbsp;
+                        </>
+                    )}
                     <ProjectLink url={githubLink} text="GitHub" />
                 </p>
             </div>

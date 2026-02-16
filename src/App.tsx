@@ -4,11 +4,9 @@ import logo from "/logo.png";
 import ProjectCard from "./components/Project";
 
 function App() {
-    const [count, setCount] = useState(0);
-
     return (
         <>
-            <nav className="flex justify-between items-center w-full h-14 bg-fishing-aqua">
+            <nav className="flex justify-between items-center w-full h-14 bg-fishing-aqua fixed">
                 <a href="#top">
                     <img
                         src={logo}
@@ -28,7 +26,7 @@ function App() {
                     />
                 </a>
             </nav>
-            <hgroup className="font-roboto-slab">
+            <hgroup className="font-roboto-slab pt-14">
                 <div className="font-semibold text-fishing-peach justify-self-center text-shadow-[2px_2px_0_#197978]">
                     <h1 className="text-6xl tracking-tighter pl-11">Serena</h1>
                     <h1 className="text-9xl tracking-tighter -mt-11">Inzani</h1>
@@ -44,7 +42,8 @@ function App() {
                     My Projects
                 </h2>
                 <ProjectCard project="rpgNotes" />
-                {/* <ProjectCard project="rpgNotes" /> */}
+                <ProjectCard project="aiRestReccs" />
+                <ProjectCard project="arduino" />
             </main>
         </>
     );
