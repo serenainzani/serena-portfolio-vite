@@ -1,4 +1,12 @@
-const PROJECTS = {
+type Project = {
+    title: string;
+    description: string;
+    githubLink: string;
+    liveLink?: string;
+    img: string;
+};
+
+const projectData: { [key: string]: Project } = {
     rpgNotes: {
         title: "RPG Notes App",
         description:
@@ -25,4 +33,4 @@ const PROJECTS = {
     },
 };
 
-export default PROJECTS;
+export default projectData;

@@ -1,12 +1,13 @@
-import PROJECTS from "../data/projectDetails";
+import projectData from "../data/projectData";
 import ProjectLink from "./ProjectLink";
 
 const ProjectCard = ({ project }: { project: string }) => {
-    const { title, description, githubLink, liveLink, img } = PROJECTS[project];
+    const { title, description, githubLink, liveLink, img } =
+        projectData[project];
     return (
         <section className="flex w-fit md:mb-5">
             <img
-                src={`../../public/${img}`}
+                src={`/${img}`}
                 className="w-40 h-40 object-cover m-2
                 "
             />
